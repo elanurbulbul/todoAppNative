@@ -1,20 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Container } from './styles/appStyles';
+import Home from './components/Home';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Otodo app</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Container >
+      <Home/>
+      <StatusBar style="light" />
+    </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'brown',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
