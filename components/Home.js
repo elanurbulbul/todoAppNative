@@ -29,7 +29,6 @@ const Home = () => {
     return(
         <>
             <Header/>
-            <Text>My Home</Text>
             <ListItem
                 todos={todos}
                 setTodos={setTodos}

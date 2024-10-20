@@ -12,7 +12,7 @@ import Constants from "expo-constants";
 // Colors
 export const colors = {
   primary: "#294525",
-  secondary: "#4D3636",
+  secondary: "#4D8353",
   tertiary: "#E6E6E6",
   alternative: "#999999",
 };
@@ -29,7 +29,7 @@ export const Container = styled.SafeAreaView`
 
 // Header
 export const HeaderView = styled.View`
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 10px;
   flex-direction: row;
   justify-content: space-between;
@@ -50,8 +50,10 @@ export const HeaderButton = styled.TouchableOpacity`
 
 // List
 export const ListContainer = styled.View`
+  background-color: ${colors.primary};
   margin-bottom: 30px;
   flex: 1;
+  padding:10px;
   padding-bottom: 40px;
 `;
 
@@ -99,8 +101,7 @@ export const TodoDate = styled.Text`
 export const SwipedTodoText = styled(TodoText)`
   color: ${colors.alternative};
   font-style: italic;
-  text-decoration: line-through;
-`;
+ `;
 
 // Modal
 export const ModalButton = styled.TouchableOpacity`
